@@ -1,0 +1,7 @@
+import socket
+
+udpsocket = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+sdata = b"hello!" // 加b是为了将字符串转为字节
+saddr=('ip',port) // 此处的ip应为自己的目标ip, port为端口号
+udpsocket.sendto(sdata,addr)
+
